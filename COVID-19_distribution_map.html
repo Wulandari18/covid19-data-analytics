@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_577b137946ff467aab104efc595191f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_577b137946ff467aab104efc595191f9" ></div>
+        
+</body>
+<script>    
+    
+            var map_577b137946ff467aab104efc595191f9 = L.map(
+                "map_577b137946ff467aab104efc595191f9",
+                {
+                    center: [-0.789275, 113.921327],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1534ccb1d7c04069967c52899fc63ede = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+            var circle_marker_f6666b8302e34e54b2c2925fc124b6eb = L.circleMarker(
+                [4.225081892000048, 96.90952274800009],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7328000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_3850b274b1b4489d959f128271afbd47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_059009a09794423d8e2c2e78ab0dbeed = $(`<div id="html_059009a09794423d8e2c2e78ab0dbeed" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Aceh<br><strong>Confirmed</strong>: 8664<br><strong>Recovery</strong>: 7111<br><strong>Death</strong>: 357<br></div>`)[0];
+            popup_3850b274b1b4489d959f128271afbd47.setContent(html_059009a09794423d8e2c2e78ab0dbeed);
+        
+
+        circle_marker_f6666b8302e34e54b2c2925fc124b6eb.bindPopup(popup_3850b274b1b4489d959f128271afbd47)
+        ;
+
+        
+    
+    
+            var circle_marker_8d7f90ce3dc34490bb03f9f7cb4b2d3f = L.circleMarker(
+                [2.184779215000049, 99.05788784900005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5164, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_3d18a12d7b914e278a13f66cf0c33c60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80cac0b5a3a64a3b9a58abb476a6c300 = $(`<div id="html_80cac0b5a3a64a3b9a58abb476a6c300" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sumatera Utara<br><strong>Confirmed</strong>: 17582<br><strong>Recovery</strong>: 14846<br><strong>Death</strong>: 669<br></div>`)[0];
+            popup_3d18a12d7b914e278a13f66cf0c33c60.setContent(html_80cac0b5a3a64a3b9a58abb476a6c300);
+        
+
+        circle_marker_8d7f90ce3dc34490bb03f9f7cb4b2d3f.bindPopup(popup_3d18a12d7b914e278a13f66cf0c33c60)
+        ;
+
+        
+    
+    
+            var circle_marker_737336341c534aae90c22de5a2777c28 = L.circleMarker(
+                [-0.85191434799998, 100.46680503000005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5776, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_f46b0434aee54d8baecf1fdcda8990bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_228253dd3b444e19b92e47de6854ba81 = $(`<div id="html_228253dd3b444e19b92e47de6854ba81" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sumatera Barat<br><strong>Confirmed</strong>: 22888<br><strong>Recovery</strong>: 19670<br><strong>Death</strong>: 487<br></div>`)[0];
+            popup_f46b0434aee54d8baecf1fdcda8990bd.setContent(html_228253dd3b444e19b92e47de6854ba81);
+        
+
+        circle_marker_737336341c534aae90c22de5a2777c28.bindPopup(popup_f46b0434aee54d8baecf1fdcda8990bd)
+        ;
+
+        
+    
+    
+            var circle_marker_ec72b0d608ef49e3b0180bb2f1dcb700 = L.circleMarker(
+                [0.510525849000032, 101.81289195400007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8458000000000006, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_b49365a7e47b4a1f9e163a5b065bbfb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39c7f5a840224b038b5ae35a7349e59d = $(`<div id="html_39c7f5a840224b038b5ae35a7349e59d" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Riau<br><strong>Confirmed</strong>: 24229<br><strong>Recovery</strong>: 21768<br><strong>Death</strong>: 552<br></div>`)[0];
+            popup_b49365a7e47b4a1f9e163a5b065bbfb4.setContent(html_39c7f5a840224b038b5ae35a7349e59d);
+        
+
+        circle_marker_ec72b0d608ef49e3b0180bb2f1dcb700.bindPopup(popup_b49365a7e47b4a1f9e163a5b065bbfb4)
+        ;
+
+        
+    
+    
+            var circle_marker_64085fdf8ade4f75bd3d1f8b9890bfaf = L.circleMarker(
+                [-1.61775, 103.59932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6136, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_c7b957d2fdde47c8a8e4c112a9097298 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0002d101515b41c790acd83cf1fcedd5 = $(`<div id="html_0002d101515b41c790acd83cf1fcedd5" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Jambi<br><strong>Confirmed</strong>: 3068<br><strong>Recovery</strong>: 2117<br><strong>Death</strong>: 51<br></div>`)[0];
+            popup_c7b957d2fdde47c8a8e4c112a9097298.setContent(html_0002d101515b41c790acd83cf1fcedd5);
+        
+
+        circle_marker_64085fdf8ade4f75bd3d1f8b9890bfaf.bindPopup(popup_c7b957d2fdde47c8a8e4c112a9097298)
+        ;
+
+        
+    
+    
+            var circle_marker_07895bd9dbac40cba47189597d7fbabc = L.circleMarker(
+                [-3.213346821999949, 104.17041944500005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2394000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_70e9f4544d2f4358879262a06d8bb789 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d749e2ba5045d2aec985e60070bc2e = $(`<div id="html_b3d749e2ba5045d2aec985e60070bc2e" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sumatera Selatan<br><strong>Confirmed</strong>: 11197<br><strong>Recovery</strong>: 9065<br><strong>Death</strong>: 590<br></div>`)[0];
+            popup_70e9f4544d2f4358879262a06d8bb789.setContent(html_b3d749e2ba5045d2aec985e60070bc2e);
+        
+
+        circle_marker_07895bd9dbac40cba47189597d7fbabc.bindPopup(popup_70e9f4544d2f4358879262a06d8bb789)
+        ;
+
+        
+    
+    
+            var circle_marker_870203162e124a39a337fc4e8beb56cb = L.circleMarker(
+                [-3.79116, 102.26312],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6486000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_83efe98a66c840dd946172587b5db02f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca850324d9af408bac7182b04674c467 = $(`<div id="html_ca850324d9af408bac7182b04674c467" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Bengkulu<br><strong>Confirmed</strong>: 3243<br><strong>Recovery</strong>: 2237<br><strong>Death</strong>: 111<br></div>`)[0];
+            popup_83efe98a66c840dd946172587b5db02f.setContent(html_ca850324d9af408bac7182b04674c467);
+        
+
+        circle_marker_870203162e124a39a337fc4e8beb56cb.bindPopup(popup_83efe98a66c840dd946172587b5db02f)
+        ;
+
+        
+    
+    
+            var circle_marker_b590600baa934e43bf661649abe923d3 = L.circleMarker(
+                [-2.252956410999957, 105.98694808200008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3738, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_e2f1f05a13594577b084f95c9777deef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e79f8e529ebf4f21a977afe323313ae6 = $(`<div id="html_e79f8e529ebf4f21a977afe323313ae6" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Bangka Belitung<br><strong>Confirmed</strong>: 1869<br><strong>Recovery</strong>: 1413<br><strong>Death</strong>: 28<br></div>`)[0];
+            popup_e2f1f05a13594577b084f95c9777deef.setContent(html_e79f8e529ebf4f21a977afe323313ae6);
+        
+
+        circle_marker_b590600baa934e43bf661649abe923d3.bindPopup(popup_e2f1f05a13594577b084f95c9777deef)
+        ;
+
+        
+    
+    
+            var circle_marker_373547af4dd64d479b6b1ca73db46278 = L.circleMarker(
+                [-4.918073086999925, 105.01831305100006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1452, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_763fb52c94164b2e8a1eff4a0e89f06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_939fa36b976c46018369a35d5cbf3c12 = $(`<div id="html_939fa36b976c46018369a35d5cbf3c12" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Lampung<br><strong>Confirmed</strong>: 5726<br><strong>Recovery</strong>: 3667<br><strong>Death</strong>: 243<br></div>`)[0];
+            popup_763fb52c94164b2e8a1eff4a0e89f06f.setContent(html_939fa36b976c46018369a35d5cbf3c12);
+        
+
+        circle_marker_373547af4dd64d479b6b1ca73db46278.bindPopup(popup_763fb52c94164b2e8a1eff4a0e89f06f)
+        ;
+
+        
+    
+    
+            var circle_marker_c4f7e1113e8545888004030a0128fb5c = L.circleMarker(
+                [3.915947241000026, 108.20222888900008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3554000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_b65549b250274de4926a85181643b9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eb8a37c86ed4919a71f954e6b7e37ec = $(`<div id="html_3eb8a37c86ed4919a71f954e6b7e37ec" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Kepulauan Riau<br><strong>Confirmed</strong>: 6777<br><strong>Recovery</strong>: 5744<br><strong>Death</strong>: 163<br></div>`)[0];
+            popup_b65549b250274de4926a85181643b9b0.setContent(html_3eb8a37c86ed4919a71f954e6b7e37ec);
+        
+
+        circle_marker_c4f7e1113e8545888004030a0128fb5c.bindPopup(popup_b65549b250274de4926a85181643b9b0)
+        ;
+
+        
+    
+    
+            var circle_marker_0762c4f034bf49baba64767a11d2561e = L.circleMarker(
+                [-6.17148, 106.82649],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.955, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_d9e2bb79725c484f823298454f36012f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06bf4429fd824cfb9eec937b0480b7c1 = $(`<div id="html_06bf4429fd824cfb9eec937b0480b7c1" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: DKI Jakarta<br><strong>Confirmed</strong>: 169775<br><strong>Recovery</strong>: 152413<br><strong>Death</strong>: 3132<br></div>`)[0];
+            popup_d9e2bb79725c484f823298454f36012f.setContent(html_06bf4429fd824cfb9eec937b0480b7c1);
+        
+
+        circle_marker_0762c4f034bf49baba64767a11d2561e.bindPopup(popup_d9e2bb79725c484f823298454f36012f)
+        ;
+
+        
+    
+    
+            var circle_marker_5ba7266f097248af947242a03b7914e1 = L.circleMarker(
+                [-6.919980215999942, 107.60280789800004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.4388, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_f794e9c81b97420d8ae6bfc8be6a6c7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_219d823605f44985a912e915f360792d = $(`<div id="html_219d823605f44985a912e915f360792d" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Jawa Barat<br><strong>Confirmed</strong>: 77194<br><strong>Recovery</strong>: 63788<br><strong>Death</strong>: 1114<br></div>`)[0];
+            popup_f794e9c81b97420d8ae6bfc8be6a6c7d.setContent(html_219d823605f44985a912e915f360792d);
+        
+
+        circle_marker_5ba7266f097248af947242a03b7914e1.bindPopup(popup_f794e9c81b97420d8ae6bfc8be6a6c7d)
+        ;
+
+        
+    
+    
+            var circle_marker_2fb039dc647947799650efba25bb81ef = L.circleMarker(
+                [-7.258970382999962, 110.20111252900006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.045200000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_afcc9cb50c684bfcbdebc2422b07b89b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb816dcb67504bc38060c2a63d77ac1a = $(`<div id="html_eb816dcb67504bc38060c2a63d77ac1a" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Jawa Tengah<br><strong>Confirmed</strong>: 75226<br><strong>Recovery</strong>: 49953<br><strong>Death</strong>: 3056<br></div>`)[0];
+            popup_afcc9cb50c684bfcbdebc2422b07b89b.setContent(html_eb816dcb67504bc38060c2a63d77ac1a);
+        
+
+        circle_marker_2fb039dc647947799650efba25bb81ef.bindPopup(popup_afcc9cb50c684bfcbdebc2422b07b89b)
+        ;
+
+        
+    
+    
+            var circle_marker_86058b980ca64975b78af527bf01f52d = L.circleMarker(
+                [-7.89501381499997, 110.44536697100006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0794, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_3e4191ea7ea44f45bc6f460d6a898869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daaa836c8f2a4d6cb353ed64774905f9 = $(`<div id="html_daaa836c8f2a4d6cb353ed64774905f9" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Daerah Istimewa Yogyakarta<br><strong>Confirmed</strong>: 10397<br><strong>Recovery</strong>: 6912<br><strong>Death</strong>: 214<br></div>`)[0];
+            popup_3e4191ea7ea44f45bc6f460d6a898869.setContent(html_daaa836c8f2a4d6cb353ed64774905f9);
+        
+
+        circle_marker_86058b980ca64975b78af527bf01f52d.bindPopup(popup_3e4191ea7ea44f45bc6f460d6a898869)
+        ;
+
+        
+    
+    
+            var circle_marker_c6e5991deb3c4c4b91038e866bb6dbb5 = L.circleMarker(
+                [-7.720113018999939, 112.73367880100011],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.677000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_567753a37363485c83c2d72b44c10d7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfc358ac818e4096bfc34e7909fdf4ca = $(`<div id="html_dfc358ac818e4096bfc34e7909fdf4ca" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Jawa Timur<br><strong>Confirmed</strong>: 78385<br><strong>Recovery</strong>: 67208<br><strong>Death</strong>: 5399<br></div>`)[0];
+            popup_567753a37363485c83c2d72b44c10d7b.setContent(html_dfc358ac818e4096bfc34e7909fdf4ca);
+        
+
+        circle_marker_c6e5991deb3c4c4b91038e866bb6dbb5.bindPopup(popup_567753a37363485c83c2d72b44c10d7b)
+        ;
+
+        
+    
+    
+            var circle_marker_4eb22c33db404f0ba93c7be0e13412f2 = L.circleMarker(
+                [-6.456181598999933, 106.10919706900006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3862, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_9e6b4b04ae9c413bac6fe8fcb194b8a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_406f6930f5cf441b8ce5d8610f620341 = $(`<div id="html_406f6930f5cf441b8ce5d8610f620341" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Banten<br><strong>Confirmed</strong>: 16931<br><strong>Recovery</strong>: 10081<br><strong>Death</strong>: 403<br></div>`)[0];
+            popup_9e6b4b04ae9c413bac6fe8fcb194b8a7.setContent(html_406f6930f5cf441b8ce5d8610f620341);
+        
+
+        circle_marker_4eb22c33db404f0ba93c7be0e13412f2.bindPopup(popup_9e6b4b04ae9c413bac6fe8fcb194b8a7)
+        ;
+
+        
+    
+    
+            var circle_marker_74995c0ef20441fc8ab9ddb57148264d = L.circleMarker(
+                [-8.36974326099994, 115.13165099500009],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3346, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_5c7afad397f94232b79960fe1790decb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2832bef3457f494aa5b0fa6df4499fa9 = $(`<div id="html_2832bef3457f494aa5b0fa6df4499fa9" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Bali<br><strong>Confirmed</strong>: 16673<br><strong>Recovery</strong>: 15246<br><strong>Death</strong>: 488<br></div>`)[0];
+            popup_5c7afad397f94232b79960fe1790decb.setContent(html_2832bef3457f494aa5b0fa6df4499fa9);
+        
+
+        circle_marker_74995c0ef20441fc8ab9ddb57148264d.bindPopup(popup_5c7afad397f94232b79960fe1790decb)
+        ;
+
+        
+    
+    
+            var circle_marker_1dd376b7b78f4d7a9480d4f04f4fd353 = L.circleMarker(
+                [-8.606652083999961, 117.50686245200006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0796000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_485022ec192b405c90489721f1669ac1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a2312f26f504ca5bf303a8c0fcb14b9 = $(`<div id="html_5a2312f26f504ca5bf303a8c0fcb14b9" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Nusa Tenggara Barat<br><strong>Confirmed</strong>: 5398<br><strong>Recovery</strong>: 4350<br><strong>Death</strong>: 264<br></div>`)[0];
+            popup_485022ec192b405c90489721f1669ac1.setContent(html_5a2312f26f504ca5bf303a8c0fcb14b9);
+        
+
+        circle_marker_1dd376b7b78f4d7a9480d4f04f4fd353.bindPopup(popup_485022ec192b405c90489721f1669ac1)
+        ;
+
+        
+    
+    
+            var circle_marker_7eab35b89011403f817a684f2bd7e001 = L.circleMarker(
+                [-8.604843331999973, 121.14182917000005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3992, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_d9c724a3226b4d52bfeaeba0bcacaeb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55fb3fc331f44c8cb902681079413867 = $(`<div id="html_55fb3fc331f44c8cb902681079413867" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Nusa Tenggara Timur<br><strong>Confirmed</strong>: 1996<br><strong>Recovery</strong>: 1085<br><strong>Death</strong>: 42<br></div>`)[0];
+            popup_d9c724a3226b4d52bfeaeba0bcacaeb7.setContent(html_55fb3fc331f44c8cb902681079413867);
+        
+
+        circle_marker_7eab35b89011403f817a684f2bd7e001.bindPopup(popup_d9c724a3226b4d52bfeaeba0bcacaeb7)
+        ;
+
+        
+    
+    
+            var circle_marker_83b421c4dc1a4a68a291fcfd48c9d297 = L.circleMarker(
+                [-0.085901233999948, 111.12076240100004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6034, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_445ac5cb45d14e49bea3d664258e161a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca4a3e4a0bb041909bc27bd2d13e0105 = $(`<div id="html_ca4a3e4a0bb041909bc27bd2d13e0105" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Kalimantan Barat<br><strong>Confirmed</strong>: 3017<br><strong>Recovery</strong>: 2604<br><strong>Death</strong>: 26<br></div>`)[0];
+            popup_445ac5cb45d14e49bea3d664258e161a.setContent(html_ca4a3e4a0bb041909bc27bd2d13e0105);
+        
+
+        circle_marker_83b421c4dc1a4a68a291fcfd48c9d297.bindPopup(popup_445ac5cb45d14e49bea3d664258e161a)
+        ;
+
+        
+    
+    
+            var circle_marker_fa780dfc3d274340969f8b78e04e160d = L.circleMarker(
+                [-1.634340044999931, 113.181047852],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8492000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_1c87fcccbcfa4549813ab7c7db308969 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bbc29ac15bb43e4bf42195311d5c495 = $(`<div id="html_1bbc29ac15bb43e4bf42195311d5c495" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Kalimantan Tengah<br><strong>Confirmed</strong>: 9246<br><strong>Recovery</strong>: 6667<br><strong>Death</strong>: 257<br></div>`)[0];
+            popup_1c87fcccbcfa4549813ab7c7db308969.setContent(html_1bbc29ac15bb43e4bf42195311d5c495);
+        
+
+        circle_marker_fa780dfc3d274340969f8b78e04e160d.bindPopup(popup_1c87fcccbcfa4549813ab7c7db308969)
+        ;
+
+        
+    
+    
+            var circle_marker_355ea0e22ca64668af55fc758bdbe00f = L.circleMarker(
+                [-2.44977913699995, 115.3113078340001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.976, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_e8b8b867447c4e95b3cbd35ad523dd5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61d0967a64cf40679f9127d19a509e22 = $(`<div id="html_61d0967a64cf40679f9127d19a509e22" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Kalimantan Selatan<br><strong>Confirmed</strong>: 14880<br><strong>Recovery</strong>: 13312<br><strong>Death</strong>: 575<br></div>`)[0];
+            popup_e8b8b867447c4e95b3cbd35ad523dd5d.setContent(html_61d0967a64cf40679f9127d19a509e22);
+        
+
+        circle_marker_355ea0e22ca64668af55fc758bdbe00f.bindPopup(popup_e8b8b867447c4e95b3cbd35ad523dd5d)
+        ;
+
+        
+    
+    
+            var circle_marker_679c5e9a20254672ae054e149bdd3ca3 = L.circleMarker(
+                [0.461046227000054, 116.47085839300007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0528, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_88bc0478e41d404093f37a9390c4f927 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37efa66d6a7d43ed96f995e1b0dceacb = $(`<div id="html_37efa66d6a7d43ed96f995e1b0dceacb" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Kalimantan Timur<br><strong>Confirmed</strong>: 25264<br><strong>Recovery</strong>: 21168<br><strong>Death</strong>: 699<br></div>`)[0];
+            popup_88bc0478e41d404093f37a9390c4f927.setContent(html_37efa66d6a7d43ed96f995e1b0dceacb);
+        
+
+        circle_marker_679c5e9a20254672ae054e149bdd3ca3.bindPopup(popup_88bc0478e41d404093f37a9390c4f927)
+        ;
+
+        
+    
+    
+            var circle_marker_6f5dec62cd64419384aea7dfa8eaaecd = L.circleMarker(
+                [2.888820961000022, 116.21671830900004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6158, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_6b75ebcba9c34779941be5dfc52b282e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8ff6fe3da924c5089c19e94af5527ee = $(`<div id="html_e8ff6fe3da924c5089c19e94af5527ee" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Kalimantan Utara<br><strong>Confirmed</strong>: 3079<br><strong>Recovery</strong>: 1859<br><strong>Death</strong>: 42<br></div>`)[0];
+            popup_6b75ebcba9c34779941be5dfc52b282e.setContent(html_e8ff6fe3da924c5089c19e94af5527ee);
+        
+
+        circle_marker_6f5dec62cd64419384aea7dfa8eaaecd.bindPopup(popup_6b75ebcba9c34779941be5dfc52b282e)
+        ;
+
+        
+    
+    
+            var circle_marker_3b7f437e8d1e496fb1b75e22fcf1e94f = L.circleMarker(
+                [1.286097687000051, 124.53537885000003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8474000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_4ff78e02ce354c56999fedf1aabfcd4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cfbc46098ef4237be724740234a0264 = $(`<div id="html_2cfbc46098ef4237be724740234a0264" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sulawesi Utara<br><strong>Confirmed</strong>: 9237<br><strong>Recovery</strong>: 6555<br><strong>Death</strong>: 293<br></div>`)[0];
+            popup_4ff78e02ce354c56999fedf1aabfcd4c.setContent(html_2cfbc46098ef4237be724740234a0264);
+        
+
+        circle_marker_3b7f437e8d1e496fb1b75e22fcf1e94f.bindPopup(popup_4ff78e02ce354c56999fedf1aabfcd4c)
+        ;
+
+        
+    
+    
+            var circle_marker_f263fdc0645b4154a06b5eb6ddd58ecb = L.circleMarker(
+                [-1.459214953999947, 120.44959250000011],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5862, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_fb440c371cf444619a6c056dc18a6ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e6094abda2c4f81953a4d023574dc5f = $(`<div id="html_1e6094abda2c4f81953a4d023574dc5f" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sulawesi Tengah<br><strong>Confirmed</strong>: 2931<br><strong>Recovery</strong>: 1703<br><strong>Death</strong>: 101<br></div>`)[0];
+            popup_fb440c371cf444619a6c056dc18a6ff5.setContent(html_1e6094abda2c4f81953a4d023574dc5f);
+        
+
+        circle_marker_f263fdc0645b4154a06b5eb6ddd58ecb.bindPopup(popup_fb440c371cf444619a6c056dc18a6ff5)
+        ;
+
+        
+    
+    
+            var circle_marker_80a69f9162ba4d7ea0215ab49ce70868 = L.circleMarker(
+                [-3.747115711999925, 120.16115770400006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.581, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_6c24ce354d6a43d390e9aae67ca19b56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74b1337ee2514d99a5c56d58e6ae8eca = $(`<div id="html_74b1337ee2514d99a5c56d58e6ae8eca" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sulawesi Selatan<br><strong>Confirmed</strong>: 27905<br><strong>Recovery</strong>: 22460<br><strong>Death</strong>: 569<br></div>`)[0];
+            popup_6c24ce354d6a43d390e9aae67ca19b56.setContent(html_74b1337ee2514d99a5c56d58e6ae8eca);
+        
+
+        circle_marker_80a69f9162ba4d7ea0215ab49ce70868.bindPopup(popup_6c24ce354d6a43d390e9aae67ca19b56)
+        ;
+
+        
+    
+    
+            var circle_marker_8cea73e2a2d147058b58fd713d098090 = L.circleMarker(
+                [-4.13280397099993, 122.07867805600006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5444, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_bca379f28c984624a322c0ef629d86fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8567f000880e4a858d2c9f056a574def = $(`<div id="html_8567f000880e4a858d2c9f056a574def" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sulawesi Tenggara<br><strong>Confirmed</strong>: 7722<br><strong>Recovery</strong>: 6621<br><strong>Death</strong>: 130<br></div>`)[0];
+            popup_bca379f28c984624a322c0ef629d86fe.setContent(html_8567f000880e4a858d2c9f056a574def);
+        
+
+        circle_marker_8cea73e2a2d147058b58fd713d098090.bindPopup(popup_bca379f28c984624a322c0ef629d86fe)
+        ;
+
+        
+    
+    
+            var circle_marker_9fc1a6ee000d40e088c780a45ed8f041 = L.circleMarker(
+                [0.53707, 123.06184],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6990000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_6cc85fd7eacc45dd8ba191e019abd341 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fccfc5fed918408491f5f95abdcd3e43 = $(`<div id="html_fccfc5fed918408491f5f95abdcd3e43" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Gorontalo<br><strong>Confirmed</strong>: 3495<br><strong>Recovery</strong>: 3198<br><strong>Death</strong>: 101<br></div>`)[0];
+            popup_6cc85fd7eacc45dd8ba191e019abd341.setContent(html_fccfc5fed918408491f5f95abdcd3e43);
+        
+
+        circle_marker_9fc1a6ee000d40e088c780a45ed8f041.bindPopup(popup_6cc85fd7eacc45dd8ba191e019abd341)
+        ;
+
+        
+    
+    
+            var circle_marker_23ce31abf44e4d678031525f1b4d7d6b = L.circleMarker(
+                [-2.461902014999964, 119.34347138300006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3644, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_d84dfc6fe914496c9f1ed87e395730ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a96c877f352345c1bea94cfdb2a1fa63 = $(`<div id="html_a96c877f352345c1bea94cfdb2a1fa63" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Sulawesi Barat<br><strong>Confirmed</strong>: 1822<br><strong>Recovery</strong>: 1480<br><strong>Death</strong>: 30<br></div>`)[0];
+            popup_d84dfc6fe914496c9f1ed87e395730ec.setContent(html_a96c877f352345c1bea94cfdb2a1fa63);
+        
+
+        circle_marker_23ce31abf44e4d678031525f1b4d7d6b.bindPopup(popup_d84dfc6fe914496c9f1ed87e395730ec)
+        ;
+
+        
+    
+    
+            var circle_marker_e7058e876c8943aba0e343866ffe2b81 = L.circleMarker(
+                [-3.126119342999971, 129.360425],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1074000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_8f22d07557864942a78047b33d50e0f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0859575318c148998ad82305fadde83b = $(`<div id="html_0859575318c148998ad82305fadde83b" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Maluku<br><strong>Confirmed</strong>: 5537<br><strong>Recovery</strong>: 3266<br><strong>Death</strong>: 47<br></div>`)[0];
+            popup_8f22d07557864942a78047b33d50e0f9.setContent(html_0859575318c148998ad82305fadde83b);
+        
+
+        circle_marker_e7058e876c8943aba0e343866ffe2b81.bindPopup(popup_8f22d07557864942a78047b33d50e0f9)
+        ;
+
+        
+    
+    
+            var circle_marker_58630677405144f39ebedb87b9d19019 = L.circleMarker(
+                [0.869337001000019, 128.01592944200002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4464, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_f27da69643bf470abe43ef1c4033a43d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74d09eb5775c41ceb29d566eb288bd93 = $(`<div id="html_74d09eb5775c41ceb29d566eb288bd93" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Maluku Utara<br><strong>Confirmed</strong>: 2232<br><strong>Recovery</strong>: 1946<br><strong>Death</strong>: 75<br></div>`)[0];
+            popup_f27da69643bf470abe43ef1c4033a43d.setContent(html_74d09eb5775c41ceb29d566eb288bd93);
+        
+
+        circle_marker_58630677405144f39ebedb87b9d19019.bindPopup(popup_f27da69643bf470abe43ef1c4033a43d)
+        ;
+
+        
+    
+    
+            var circle_marker_c1aa41c6dcf84f65a525ac80a5b35b5f = L.circleMarker(
+                [-5.0, 140.0000000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8074000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_c7d58bd03c2844f2a23382b58aee859b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72f6541594ec478497c450351abd7f2c = $(`<div id="html_72f6541594ec478497c450351abd7f2c" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Papua<br><strong>Confirmed</strong>: 9037<br><strong>Recovery</strong>: 4637<br><strong>Death</strong>: 129<br></div>`)[0];
+            popup_c7d58bd03c2844f2a23382b58aee859b.setContent(html_72f6541594ec478497c450351abd7f2c);
+        
+
+        circle_marker_c1aa41c6dcf84f65a525ac80a5b35b5f.bindPopup(popup_c7d58bd03c2844f2a23382b58aee859b)
+        ;
+
+        
+    
+    
+            var circle_marker_ece323b4926840d1a1d229e704932718 = L.circleMarker(
+                [-2.041723281999964, 132.9683417120001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8378, "stroke": true, "weight": 3}
+            ).addTo(map_577b137946ff467aab104efc595191f9);
+        
+    
+        var popup_24ade01fce264c6a8da4189a8887eba0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3f347024f174867b0dce659c5442c5d = $(`<div id="html_a3f347024f174867b0dce659c5442c5d" style="width: 100.0%; height: 100.0%;"><strong>Province</strong>: Papua Barat<br><strong>Confirmed</strong>: 4189<br><strong>Recovery</strong>: 3655<br><strong>Death</strong>: 66<br></div>`)[0];
+            popup_24ade01fce264c6a8da4189a8887eba0.setContent(html_a3f347024f174867b0dce659c5442c5d);
+        
+
+        circle_marker_ece323b4926840d1a1d229e704932718.bindPopup(popup_24ade01fce264c6a8da4189a8887eba0)
+        ;
+
+        
+    
+</script>
